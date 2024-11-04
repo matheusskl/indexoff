@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Responsivo</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="Extensao.html">
+    <link rel="stylesheet" href="programas.html">
+    <link rel="stylesheet" href="ativador_windows.html">
+    <link rel="stylesheet" href="CMD.html">
+</head>
+<body>
+
+	<style>
+        
+	</style>
+    <nav>
+        <ul>
+            <li><button><a id="botao" href="index.html" onclick="toggleContent('index')" target="_blank">Home</a></button></li>
+            <li><button><a id="botao" href="Extensao.html" onclick="toggleContent('Extensao')" target="_blank">EXTENSÕES_web</a></button></li>
+            <li><button><a id="botao" href="programas.html" onclick="toggleContent('programas')" target="_blank">PROGRAMAS</a></button></li>
+            <li><button><a id="botao" href="ativador_windows.html" onclick="toggleContent('ativador_windows')" target="_blank">ATIVADOR_windows</a></button></li>
+            <li><button><a id="botao" href="CMD.html" onclick="toggleContent('CMD')" target="_blank">CMD</a></button></li>
+        </ul>
+    </nav>
+      
+      <div class="container">
+        <div class="note">
+          <h1>GOOGLE CHROME</h1>
+          <p id="chrom">chrome://flags/#enable-parallel-downloading </p>
+          <h5> Habilite o comando >> Parallel downloading</h5>
+          <a href="https://www.freedownloadmanager.org/pt/" target="_blank"> FREE DOWNLOAD MANAGER</a>
+          <a href="https://chrome.google.com/webstore/detail/free-download-manager/ahmpjcflkgiildlgicmcieglgoilbfdp" target="_blank"> Extensao Free download manager Chrome </a>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="note">
+          <h2>Baixar Versão Manualmente do W.Update</h2>
+          <a href="https://catalog.update.microsoft.com/Home.aspx" target="_blank"> WINDOWS_UPDATE</a>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="note">
+          <h2>Programa otimiza memoria RAM do PC</h2>
+          <a href="https://www.wisecleaner.com/wise-memory-optimizer.html" target="_blank"> WISE-MEMORY</a>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="note">
+          <h2>Programa otimiza o Navegador pra nao consumir muita memoria RAM do PC</h2>
+          <a href="https://www.rizonesoft.com/downloads/firemin/" target="_blank"> FIREMIN</a>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="note">
+          <h2>Programa Otimiza o PC e Desfragmenta o SSD & HD</h2>
+          <a href="https://www.ccleaner.com/defraggler?cc-noredirect="target="_blank"> DEFRAGGLER</a>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="note">
+          <h2>Programas que faz o CPU utilzar todo seu desempeho em jogos</h2>
+          <a href="https://coderbag.com/programming-c/disable-cpu-core-parking-utility" target="_blank"> PARKING-UTILITY</a>
+          <a href="https://coderbag.com/product/quickcpu" target="_blank"> QUICKCPU</a>
+        </div>
+      </div>
+      
+        <div class="container">
+        <div class="note">
+          <h2>Site CIDR - CALCULATOR</h2>
+          <p>SITE QUE CALCULA O CIDR DE UMA REDE </p>
+          <a href="https://www.site24x7.com/tools/ipv4-subnetcalculator.html" target="_blank"> 1° CIDR CALCULATOR <<</a>
+          <a href="https://www.subnet-calculator.com/cidr.php" target="_blank"> 2° ONLINE IP CIDR <<</a>
+        </div>
+        <!-- Você pode adicionar mais notas aqui -->
+      </div>
+	
+	<script>
+		function toggleContent(id) {
+		var content = document.getElementById(id);
+		if(content.style.display === "none") {
+			content.style.display = "block";
+		}else {
+			content.style.display = "none";
+			}
+		}
+	</script>
+    <footer>
+        <p>&copy; 2024 Site Responsivo. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
