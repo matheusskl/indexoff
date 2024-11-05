@@ -53,7 +53,8 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: #181414;
-  height: 100vh;
+  --webkit-height: 100vh;
+
 }
 #lista, a {
   display: inline-block;
