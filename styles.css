@@ -54,7 +54,7 @@ footer {
   justify-content: center;
   background-color: #181414;
   width: 100vw;
-  --webkit-height: 100vh;
+  --webkit-height: 100%;
 }
 #lista, a {
   display: inline-block;
