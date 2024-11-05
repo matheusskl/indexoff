@@ -50,10 +50,12 @@ footer {
   align-items: center;
   background-color: #181414;
   justify-content: center;
-  height: 100%;
-  top: 0%;
+  
 }
 
+#pp{
+  height: 100%;
+}
 
 #lista, a {
   display: inline-block;
