@@ -70,6 +70,9 @@ footer {
   
 }
 
+#corr {
+  color: #0cee6a;
+}
 .lado, #cor {
   display: inline;
   margin-top:1rem;
