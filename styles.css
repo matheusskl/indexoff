@@ -70,6 +70,10 @@ footer {
   
 }
 
+h5{
+  text-transform: uppercase;
+}
+
 #corr {
   color: #0cee6a;
 }
