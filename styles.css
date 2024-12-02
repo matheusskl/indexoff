@@ -6,7 +6,12 @@ body {
   --webkit-background-color: #181414;
 }
 
-
+#chrom {
+  color: #ff0000;
+}
+.microsoft{
+  color: #ff0000;
+}
 
 nav{
   background-color: rgb(63, 63, 63);
@@ -112,7 +117,6 @@ article{
   justify-content: center;
   margin-top: 1rem;
   position: relative;
-  
 }
 legend{
   padding: 0 10px 0 10px;
@@ -157,7 +161,9 @@ fieldset{
   margin-bottom: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align:center;
+  border-radius: 2rem;
 }
+
 .note a {
 display:block;
 padding:5px;
