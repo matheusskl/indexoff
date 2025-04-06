@@ -117,7 +117,10 @@ article{
   justify-content: center;
   margin-top: 1rem;
   position: relative;
+  font-weight: bold;
 }
+
+
 legend{
   padding: 0 10px 0 10px;
   border-radius: 2rem;
