@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="programas.html">
     <link rel="stylesheet" href="ativador_windows.html">
     <link rel="stylesheet" href="CMD.html">
+    <link rel="stylesheet" href="IP.html">
 </head>
 <body>
 
@@ -19,6 +20,7 @@
     <nav>
         <ul>
             <li><button><a id="botao" target="_self" href="index.html" onclick="toggleContent('index')" >Home</a></button></li>
+            <li><button><a id="botao" target="_self" href="IP.html" onclick="toggleContent('index')" >REDES TCP/IP</a></button></li>
             <li><button><a id="botao" target="_self" href="Extensao.html" onclick="toggleContent('Extensao')" >EXTENSÕES_web</a></button></li>
             <li><button><a id="botao" target="_self" href="instalacao sem a conta da Microsoft.html" onclick="toggleContent('microsoft')" >Sem a Conta da Microsoft</a></button></li>
             <li><button><a id="botao" target="_self" href="programas.html" onclick="toggleContent('programas')" >PROGRAMAS</a></button></li>
@@ -27,92 +29,144 @@
         </ul>
     </nav>
       
-      <div class="container">
-        <div class="note">
-          <h1>GOOGLE CHROME</h1>
+    <h1>..</h1>
+
+    <div class="acordeao">
+  
+      <div class="item">
+        <div class="titulo" onclick="toggleItem(this)">
+          <span class="icone">＋</span>
+          GOOGLE CHROME
+          <span class="icone">＋</span>
+        </div>
+        <div class="conteudo">
           <p id="chrom">chrome://flags/#enable-parallel-downloading </p>
-          <h5> Habilite o comando >> Parallel downloading</h5>
-          <a href="https://www.freedownloadmanager.org/pt/" target="_blank"> FREE DOWNLOAD MANAGER</a>
-          <a href="https://chrome.google.com/webstore/detail/free-download-manager/ahmpjcflkgiildlgicmcieglgoilbfdp" target="_blank"> Extensao Free download manager Chrome </a>
+          <h5 style="text-align: center;"> Habilite o comando >> Parallel downloading</h5>
+          <a id="linkdolado" href="https://www.freedownloadmanager.org/pt/" target="_blank"> FREE DOWNLOAD MANAGER</a> 
+          <a id="linkdolado" href="https://chrome.google.com/webstore/detail/free-download-manager/ahmpjcflkgiildlgicmcieglgoilbfdp" target="_blank"> Extensao Free download manager </a>
+      </div>
+      </div>
+  
+      <div class="item">
+        <div class="titulo" onclick="toggleItem(this)">
+          <span class="icone">＋</span>
+            OS CLICK
+          <span class="icone">＋</span>
+        </div>
+        <div class="conteudo">
+          <p> SITE QUE DA PRA BAIXAR VERSOES DE SISTEMA OPERACIONAL <MARK>ISO</MARK></p>
+          <a id="linkcenter" href="https://os.click/en" target="_blank"> >> OS.CLICK << </a>
+        </div>
+      </div>
+  
+      <div class="item">
+        <div class="titulo" onclick="toggleItem(this)">
+          <span class="icone">＋</span>
+          Pairdrop.Net
+          <span class="icone">＋</span>
+        </div>
+        <div class="conteudo">
+          <p>site que Transfere arquivos do <mark>celular</mark> pro <mark>Desktop</mark> e Vice-Versa</p>
+          <h5 style="text-align: center;">ABRA O SITE NO PC & NO CELULAR</h5>
+          <a id="linkcenter" href="https://pairdrop.net/" target="_blank"> Pairdrop.Net</a>
         </div>
       </div>
 
-      <div class="container">
-        <div class="note">
-          <h1>OS CLICK</h1>
-          <h4> SITE QUE DA PRA BAIXAR VERSOES DE SISTEMA OPERACIONAL <MARK>ISO</MARK>  </h4>
-          <a href="https://os.click/en" target="_blank"> >> OS.CLICK << </a>
+      
+      <div class="item">
+        <div class="titulo" onclick="toggleItem(this)">
+          <span class="icone">＋</span>
+          Baixar Versão Manualmente do W.Update
+          <span class="icone">＋</span>
+        </div>
+        <div class="conteudo">
+          <a id="linkcenter" href="https://catalog.update.microsoft.com/Home.aspx" target="_blank"> WINDOWS_UPDATE</a>
         </div>
       </div>
 
-      <div class="container">
-        <div class="note">
-          <h1>Pairdrop.Net</h1>
-          <h5> site que Transfere arquivos do <mark>celular</mark> pro <mark>Desktop</mark> e Vice-Versa</h5>
-          <h4>ABRA O SITE NO PC & NO CELULAR</h4>
-          <a href="https://pairdrop.net/" target="_blank"> Pairdrop.Net</a>
+      <div class="item">
+        <div class="titulo" onclick="toggleItem(this)">
+          <span class="icone">＋</span>
+          Programa otimiza memoria RAM do PC
+          <span class="icone">＋</span>
+        </div>
+        <div class="conteudo">
+          <a id="linkcenter" href="https://www.wisecleaner.com/wise-memory-optimizer.html" target="_blank"> WISE-MEMORY</a>
+        </div>
+      </div>
+  
+      <div class="item">
+        <div class="titulo" onclick="toggleItem(this)">
+          <span class="icone">＋</span>
+          Programa otimiza o Navegador pra nao<br> consumir muita memoria RAM do PC
+          <span class="icone">＋</span>
+        </div>
+        <div class="conteudo">
+          <a id="linkcenter" href="https://www.rizonesoft.com/downloads/firemin/" target="_blank"> FIREMIN</a>
         </div>
       </div>
 
-      
-      <div class="container">
-        <div class="note">
-          <h2>Baixar Versão Manualmente do W.Update</h2>
-          <a href="https://catalog.update.microsoft.com/Home.aspx" target="_blank"> WINDOWS_UPDATE</a>
+      <div class="item">
+        <div class="titulo" onclick="toggleItem(this)">
+          <span class="icone">＋</span>
+          Programa Otimiza o PC e Desfragmenta o SSD & HD
+          <span class="icone">＋</span>
+        </div>
+        <div class="conteudo">
+          <a id="linkcenter" href="https://www.ccleaner.com/defraggler?cc-noredirect="target="_blank"> DEFRAGGLER</a>
         </div>
       </div>
-    
-      <div class="container">
-        <div class="note">
-          <h2>Programa otimiza memoria RAM do PC</h2>
-          <a href="https://www.wisecleaner.com/wise-memory-optimizer.html" target="_blank"> WISE-MEMORY</a>
+
+      <div class="item">
+        <div class="titulo" onclick="toggleItem(this)">
+          <span class="icone">＋</span>
+          Programas que faz o CPU utilzar todo seu desempeho em jogos
+          <span class="icone">＋</span>
+        </div>
+        <div class="conteudo">
+          <a id="linkcenter" href="https://coderbag.com/programming-c/disable-cpu-core-parking-utility" target="_blank"> PARKING-UTILITY</a>
+          <a id="linkcenter" href="https://coderbag.com/product/quickcpu" target="_blank"> QUICKCPU</a>
         </div>
       </div>
-      
-      <div class="container">
-        <div class="note">
-          <h2>Programa otimiza o Navegador pra nao consumir muita memoria RAM do PC</h2>
-          <a href="https://www.rizonesoft.com/downloads/firemin/" target="_blank"> FIREMIN</a>
+
+      <div class="item">
+        <div class="titulo" onclick="toggleItem(this)">
+          <span class="icone">＋</span>
+          Site CIDR - CALCULATOR
+          <span class="icone">＋</span>
         </div>
-      </div>
-      
-      <div class="container">
-        <div class="note">
-          <h2>Programa Otimiza o PC e Desfragmenta o SSD & HD</h2>
-          <a href="https://www.ccleaner.com/defraggler?cc-noredirect="target="_blank"> DEFRAGGLER</a>
-        </div>
-      </div>
-      
-      <div class="container">
-        <div class="note">
-          <h2>Programas que faz o CPU utilzar todo seu desempeho em jogos</h2>
-          <a href="https://coderbag.com/programming-c/disable-cpu-core-parking-utility" target="_blank"> PARKING-UTILITY</a>
-          <a href="https://coderbag.com/product/quickcpu" target="_blank"> QUICKCPU</a>
-        </div>
-      </div>
-      
-        <div class="container">
-        <div class="note">
-          <h2>Site CIDR - CALCULATOR</h2>
+        <div class="conteudo">
           <p>SITE QUE CALCULA O CIDR DE UMA REDE </p>
-          <a href="https://www.site24x7.com/tools/ipv4-subnetcalculator.html" target="_blank"> 1° CIDR CALCULATOR <<</a>
-          <a href="https://www.subnet-calculator.com/cidr.php" target="_blank"> 2° ONLINE IP CIDR <<</a>
+          <a id="linkcenter" href="https://www.site24x7.com/tools/ipv4-subnetcalculator.html" target="_blank"> 1° CIDR CALCULATOR <<</a>
+          <a id="linkcenter" href="https://www.subnet-calculator.com/cidr.php" target="_blank"> 2° ONLINE IP CIDR <<</a>
         </div>
-        <!-- Você pode adicionar mais notas aqui -->
       </div>
-	    
-	<script>
-		function toggleContent(id) {
-		var content = document.getElementById(id);
-		if(content.style.display === "none") {
-			content.style.display = "block";
-		}else {
-			content.style.display = "none";
-			}
-		}
-	</script>
-    <footer>
-        <p>&copy; 2024 Site Responsivo. Todos os direitos reservados.</p>
-    </footer>
-</body>
-</html>
+
+    </div>
+  
+    <script>
+      function toggleItem(elemento) {
+        const item = elemento.parentElement;
+        const acordeao = item.parentElement;
+        const itens = acordeao.querySelectorAll('.item');
+  
+        itens.forEach(i => {
+          if (i !== item) {
+            i.classList.remove('ativo');
+            i.querySelector('.icone').textContent = '＋';
+          }
+        });
+  
+        if (item.classList.contains('ativo')) {
+          item.classList.remove('ativo');
+          elemento.querySelector('.icone').textContent = '＋';
+        } else {
+          item.classList.add('ativo');
+          elemento.querySelector('.icone').textContent = '×';
+        }
+      }
+    </script>
+  
+  </body>
+  </html>
+  

@@ -1,10 +1,31 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #181414;
   --webkit-background-color: #181414;
+  color: #333;
 }
+
+#linkdolado{
+  display: flex;
+  gap: 500px;
+  
+  margin-left: 11%;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#linkcenter{
+  display: flex;
+  gap: 500px;
+  margin: 0px 1rem 0px 0px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
 
 #chrom {
   color: #ff0000;
@@ -82,20 +103,21 @@ h5{
 #corr {
   color: #0cee6a;
 }
-.lado, #cor {
+.lado {
   display: inline;
   margin-top:1rem;
   display: inline-block;
   color: #ff0000;
 }
 
+#cor{
+  color:rgb(250, 235, 21)
+}
+
 .lcor{
   color: #ffffff;
 }
-.lcor:hover{
-  color: #01831d;
-  text-shadow: 0.7px 0.6px 0.8px #ffffff;
-}
+
 
 /* Estilos responsivos */
 @media only screen and (min-width: 600px) {
@@ -151,7 +173,7 @@ fieldset{
 /* FUNCAO DA ABA PROGRAMAS */
 
 .container {
-  max-width: 800px;
+  max-width: 650px;
   margin-bottom: -30px;
   padding: 1rem;
   margin:0 auto;
@@ -218,4 +240,108 @@ button:hover{
 
 #botao:hover{
   color:rgb(0, 0, 0);
+}
+
+
+
+/*ANIMACAO DO TOPICO REDES*/
+
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #dd00ad;
+}
+
+.acordeao {
+  max-width: 700px;
+  margin: auto;
+}
+
+.item {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.item:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.titulo:hover {
+  background: #f0f4f8;
+}
+
+.icone {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.item.ativo .icone {
+  transform: rotate(45deg);
+}
+
+.conteudo {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 24px;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  background: #f9f9f9;
+}
+
+.conteudo p {
+  margin: 16px 0;
+  line-height: 1.6;
+  font-size: 14px;
+  color: #8b0023;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#left{
+  text-align: left;
+  color: #000000;
+}
+
+.item.ativo .conteudo {
+  max-height: 300px;
+  padding: 10px 24px 20px 24px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .titulo {
+    font-size: 16px;
+    padding: 16px 20px;
+  }
+
+  .conteudo p {
+    font-size: 15px;
+  }
 }
