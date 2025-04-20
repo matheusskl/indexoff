@@ -140,8 +140,51 @@
         </div>
       </div>
 
-  </div>
+      <div class="item">
+        <div class="titulo" onclick="toggleItem(this)">
+          <span class="icone">＋</span>
+          Unidades de Medida da Internet
+          <span class="icone">＋</span>
+        </div>
+        <div class="conteudo">
+          <ul>
+              <li><strong>bit:</strong> 0 ou 1 (menor unidade)</li>
+              <li><strong>1 Byte:</strong> E O Conjunto de 8 bits</li>
+              <li><strong>1 Kilobyte:</strong> 1.024 Bytes</li>
+              <li><strong>1 Megabyte:</strong> 1.024 KB</li>
+              <li><strong>1 Gigabyte:</strong> 1.024 MB</li>
+              <li><strong>1 Terabyte:</strong> 1.024 GB</li>
+          </ul>
+        </div>
+      </div>
 
+      <div class="item">
+        <div class="titulo" onclick="toggleItem(this)">
+          <span class="icone">＋</span>
+          Porque na Unidades de Medida <br>da Internet Sempre Aparece 1.024
+          <span class="icone">＋</span>
+        </div>
+        <div class="conteudo" style="overflow: scroll;">
+          <ul>
+            <p id="left" style="text-align: center;"> Os Computadores trabalham com o sistema binário <strong>(base 2)</strong><br> que só entende <strong> 0 e 1.</strong> No sistema binário:</p>
+              <li><strong>2⁰ =</strong> 1</li>
+              <li><strong>2¹ =</strong> 2</li>
+              <li><strong>2² =</strong> 4</li>
+              <li><strong>2³ =</strong> 8</li>
+              <li><strong>2⁴ =</strong> 16</li>
+              <li><strong>2⁵ =</strong> 32</li>
+              <li><strong>2⁶ =</strong> 64</li>
+              <li><strong>2⁷ =</strong> 128</li>
+              <li><strong>2⁸ =</strong> 256</li>
+              <li><strong>2⁹ =</strong> 512</li>
+              <li><strong>2¹⁰ =</strong> 1.024</li>
+              <p id="left" style="text-align: center;"> Ou seja — <strong>1.024</strong> é a potência de 2 mais próxima de 1.000, então o <strong>pessoal da computação</strong> adotou isso pra organizar os dados em blocos certinhos.</p> 
+          </ul>
+        </div>
+      </div>
+
+  </div>
+<br>
   <script>
     function toggleItem(elemento) {
       const item = elemento.parentElement;
