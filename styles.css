@@ -7,6 +7,17 @@ body {
   color: #333;
 }
 
+#mu-mimo{
+  color: #181414;
+  text-align: left;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+#destaque_mu-mimo{
+  color: rgb(0, 0, 0);
+}
+
 #linkdolado{
   display: flex;
   gap: 500px;
