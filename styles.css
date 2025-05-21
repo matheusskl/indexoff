@@ -93,7 +93,7 @@ footer {
 
 
 #lista, a {
-  display: inline-block;
+  
   text-decoration: none;
   
 }
@@ -113,11 +113,12 @@ h5{
 
 #corr {
   color: #0cee6a;
+
 }
 .lado {
-  display: inline;
+  
   margin-top:1rem;
-  display: inline-block;
+  display: inline-flex;
   color: #ff0000;
 }
 
