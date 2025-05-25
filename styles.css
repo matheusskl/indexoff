@@ -372,7 +372,7 @@ h4{
 
 /*Tabela dos celulares*/
 
---webkit table {
+table {
   width: 100%;
   border-collapse: collapse; /* Remove espaços entre as bordas */
 }
@@ -389,7 +389,7 @@ th {
 
 /* Opções adicionais */
 /* Cor de fundo para linhas ímpares */
- --webkit tr:nth-child(even) {
+--webkit tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
