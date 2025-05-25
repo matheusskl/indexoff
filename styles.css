@@ -372,7 +372,7 @@ h4{
 
 /*Tabela dos celulares*/
 
-table {
+--webkit table {
   width: 100%;
   border-collapse: collapse; /* Remove espaços entre as bordas */
 }
@@ -389,7 +389,7 @@ th {
 
 /* Opções adicionais */
 /* Cor de fundo para linhas ímpares */
-tr:nth-child(even) {
+ --webkit tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
@@ -404,23 +404,23 @@ td {
 }
 
 /* Largura das colunas */
-th:nth-child(1) {
+--webkit th:nth-child(1) {
   width: 15%;
 }
 
-th:nth-child(2) {
+--webkit th:nth-child(2) {
   width: 12%;
 }
 
-th:nth-child(3) {
+--webkit th:nth-child(3) {
   width: 10%;
 }
 
-th:nth-child(4) {
+--webkit th:nth-child(4) {
   width: 10%;
 }
 
-th:nth-child(5) {
+--webkit th:nth-child(5) {
   width: 10%;
 }
 
