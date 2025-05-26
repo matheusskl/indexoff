@@ -111,25 +111,6 @@ h5{
   text-transform: uppercase;
 }
 
-#corr {
-  color: #0cee6a;
-
-}
-.lado {
-  
-  margin-top:1rem;
-  display: inline-flex;
-  color: #ff0000;
-}
-
-#cor{
-  color:rgb(250, 235, 21)
-}
-
-.lcor{
-  color: #ffffff;
-}
-
 
 /* Estilos responsivos */
 @media only screen and (min-width: 600px) {
@@ -434,3 +415,34 @@ th, td {
 /*ESPAÇO ENTRE AS LI DA TABELA*/
 
 #espaço:not(:first-child) { margin-top: 1em; } 
+
+.espaço:not(:first-child) { margin-top: 2.0em; } 
+
+
+#programapc{
+  color: #f0f0f0;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  
+}
+
+
+#cor{
+  color:rgb(250, 235, 21)
+}
+
+.lcor{
+  color: #ffffff;
+}
+.lcorr{
+  color: #ffffff;
+}
+
+#ladoAladoLinks {
+  cursor: grab;
+  padding-left: 5px;
+  display: flex;
+  color: rgb(243, 125, 125);
+}
