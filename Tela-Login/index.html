@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela-Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("hacker.gif");
+
+        }
+
+        form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 1px 1px 1px greenyellow;
+            letter-spacing: 5px;
+
+        }
+
+
+        
+        input::placeholder {
+            text-align: left;
+            /* Placeholder alinhado à esquerda */
+            color: #aaa;
+            transition: opacity 0.2s ease-in-out;
+        }
+
+
+
+        input:focus::placeholder {
+            opacity: 0;
+            /* Some o placeholder ao focar */
+        }
+
+
+        input {
+            border: 1px solid black;
+            margin-bottom: 1.9em;
+            padding: 10px;
+            outline: none;
+            border-radius: 20px;
+            transform: scale(1.5);
+            border: none;
+            text-align: center;
+            /* Texto digitado vai para o centro */
+        }
+
+        .p, .o {
+            box-shadow: 0 0 2px rgb(139, 4, 156);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 0.6em;
+            transform: scale(1.5);
+            color: rgb(255, 239, 17);
+            text-shadow: 1px 1px 3px red;
+        }
+
+        .f {
+            border: none;
+            left: 35%;
+            position: absolute;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+        }
+
+        .f:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(68, 68, 68);
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        iframe {
+            cursor: none;
+        }
+
+        #icon {
+            position: absolute;
+            top: 74%;
+            right: -25px;
+            transform: translateY(-50%);
+            background: url('show.png');
+            background-size: cover;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        #icon.hide {
+            background: url('hide.png');
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form>
+        <h2>TELA LOGIN</h2>
+        <input type="text" maxlength="6" class="p" placeholder="login" id="login"><br>
+        <input type="password" maxlength="6" class="o" placeholder="senha" id="password"><br>
+        <div id="icon" onclick="showHide()"></div>
+        <input onclick="logar(); return false" class="f" type="submit" value="LOGAR">
+    </form>
+</body>
+<script>
+    const password = document.getElementById('password');
+    const icon = document.getElementById('icon');
+
+    function showHide() {
+        if (password.type === 'password') {
+            password.setAttribute('type', 'text');
+            icon.classList.add('hide')
+        }
+        else {
+            password.setAttribute('type', 'password');
+            icon.classList.remove('hide')
+        }
+    }
+    function logar() {
+
+        var login = document.getElementById('login').value;
+        var senha = document.getElementById('password').value;
+
+        if (
+            (login == "joel" && senha == "joel") ||
+            (login == "sousa" && senha == "sousa")
+        ) {
+            location.href = "../indexx.html";
+        }
+        else {
+            alert('senha ou login esta incorreto');
+        }
+    }
+
+</script>
+
+</html>
