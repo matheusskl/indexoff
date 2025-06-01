@@ -1,184 +1,213 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dsousa</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="Extensao.html">
-    <link rel="stylesheet" href="programas.html">
-    <link rel="stylesheet" href="ativador_windows.html">
-    <link rel="stylesheet" href="CMD.html">
-    <link rel="stylesheet" href="IP.html">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dsousa</title>
+  <link rel="stylesheet" href="Tela-Login/index.html">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="Extensao.html">
+  <link rel="stylesheet" href="programas.html">
+  <link rel="stylesheet" href="ativador_windows.html">
+  <link rel="stylesheet" href="CMD.html">
+  <link rel="stylesheet" href="IP.html">
+
 </head>
+
 <body>
 
-	<style>
-        
-	</style>
-    <nav>
-        <ul>
-            <li><button><a id="botao" target="_self" href="indexx.html" onclick="toggleContent('index')" >Home</a></button></li>
-            <li><button><a id="botao" target="_self" href="IP.html" onclick="toggleContent('index')" >REDES TCP/IP</a></button></li>
-            <li><button><a id="botao" target="_self" href="Extensao.html" onclick="toggleContent('Extensao')" >EXTENSÕES_web</a></button></li>
-            <li><button><a id="botao" target="_self" href="instalacao sem a conta da Microsoft.html" onclick="toggleContent('microsoft')" >Sem a Conta da Microsoft</a></button></li>
-            <li><button><a id="botao" target="_self" href="programas.html" onclick="toggleContent('programas')" >PROGRAMAS</a></button></li>
-            <li><button><a id="botao" target="_self" href="ativador_windows.html" onclick="toggleContent('ativador_windows')" >ATIVADOR_windows</a></button></li>
-            <li><button><a id="botao" target="_self" href="CMD.html" onclick="toggleContent('CMD')" >CMD</a></button></li>
-        </ul>
-    </nav>
-      
-    <h1>..</h1>
+  <style>
 
-    <div class="acordeao">
-  
-      <div class="item">
-        <div class="titulo" onclick="toggleItem(this)">
-          <span class="icone">＋</span>
-          GOOGLE CHROME
-          <span class="icone">＋</span>
-        </div>
-        <div class="conteudo">
-          <p id="chrom">chrome://flags/#enable-parallel-downloading </p>
-          <h5 style="text-align: center;"> Habilite o comando >> Parallel downloading</h5>
-          <a id="linkdolado" href="https://www.freedownloadmanager.org/pt/" target="_blank"> FREE DOWNLOAD MANAGER</a> 
-          <a id="linkdolado" href="https://chrome.google.com/webstore/detail/free-download-manager/ahmpjcflkgiildlgicmcieglgoilbfdp" target="_blank"> Extensao Free download manager </a>
-      </div>
-      </div>
-  
-      <div class="item">
-        <div class="titulo" onclick="toggleItem(this)">
-          <span class="icone">＋</span>
-            OS CLICK
-          <span class="icone">＋</span>
-        </div>
-        <div class="conteudo">
-          <p> SITE QUE DA PRA BAIXAR VERSOES DE SISTEMA OPERACIONAL <MARK>ISO</MARK></p>
-          <a id="linkcenter" href="https://os.click/en" target="_blank"> >> OS.CLICK << </a>
-        </div>
-      </div>
-  
-      <div class="item">
-        <div class="titulo" onclick="toggleItem(this)">
-          <span class="icone">＋</span>
-          Pairdrop.Net
-          <span class="icone">＋</span>
-        </div>
-        <div class="conteudo">
-          <p>site que Transfere arquivos do <mark>celular</mark> pro <mark>Desktop</mark> e Vice-Versa</p>
-          <h5 style="text-align: center;">ABRA O SITE NO PC & NO CELULAR</h5>
-          <a id="linkcenter" href="https://pairdrop.net/" target="_blank"> Pairdrop.Net</a>
-        </div>
-      </div>
+  </style>
+  <nav>
+    <ul>
+      <li><button><a id="botao" target="_self" href="indexx.html" onclick="toggleContent('index')">Home</a></button>
+      </li>
+      <li><button><a id="botao" target="_self" href="IP.html" onclick="toggleContent('index')">REDES TCP/IP</a></button>
+      </li>
+      <li><button><a id="botao" target="_self" href="Extensao.html"
+            onclick="toggleContent('Extensao')">EXTENSÕES_web</a></button></li>
+      <li><button><a id="botao" target="_self" href="instalacao sem a conta da Microsoft.html"
+            onclick="toggleContent('microsoft')">Sem a Conta da Microsoft</a></button></li>
+      <li><button><a id="botao" target="_self" href="programas.html"
+            onclick="toggleContent('programas')">PROGRAMAS</a></button></li>
+      <li><button><a id="botao" target="_self" href="ativador_windows.html"
+            onclick="toggleContent('ativador_windows')">ATIVADOR_windows</a></button></li>
+      <li><button><a id="botao" target="_self" href="CMD.html" onclick="toggleContent('CMD')">CMD</a></button></li>
+    </ul>
+  </nav>
 
-      
-      <div class="item">
-        <div class="titulo" onclick="toggleItem(this)">
-          <span class="icone">＋</span>
-          Baixar Versão Manualmente do W.Update
-          <span class="icone">＋</span>
-        </div>
-        <div class="conteudo">
-          <a id="linkcenter" href="https://catalog.update.microsoft.com/Home.aspx" target="_blank"> WINDOWS_UPDATE</a>
-        </div>
-      </div>
+  <h1>..</h1>
 
-      <div class="item">
-        <div class="titulo" onclick="toggleItem(this)">
-          <span class="icone">＋</span>
-          Programa otimiza memoria RAM do PC
-          <span class="icone">＋</span>
-        </div>
-        <div class="conteudo">
-          <a id="linkcenter" href="https://www.wisecleaner.com/wise-memory-optimizer.html" target="_blank"> WISE-MEMORY</a>
-        </div>
-      </div>
-  
-      <div class="item">
-        <div class="titulo" onclick="toggleItem(this)">
-          <span class="icone">＋</span>
-          Programa otimiza o Navegador pra nao<br> consumir muita memoria RAM do PC
-          <span class="icone">＋</span>
-        </div>
-        <div class="conteudo">
-          <a id="linkcenter" href="https://www.rizonesoft.com/downloads/firemin/" target="_blank"> FIREMIN</a>
-        </div>
-      </div>
+  <div class="acordeao">
 
-      <div class="item">
-        <div class="titulo" onclick="toggleItem(this)">
-          <span class="icone">＋</span>
-          Programa Otimiza o PC e <br>Desfragmenta o SSD & HD
-          <span class="icone">＋</span>
-        </div>
-        <div class="conteudo">
-          <a id="linkcenter" href="https://www.ccleaner.com/defraggler?cc-noredirect="target="_blank"> DEFRAGGLER</a>
-        </div>
+    <div class="item">
+      <div class="titulo" onclick="toggleItem(this)">
+        <span class="icone">＋</span>
+        GOOGLE CHROME
+        <span class="icone">＋</span>
       </div>
-
-      <div class="item">
-        <div class="titulo" onclick="toggleItem(this)">
-          <span class="icone">＋</span>
-          Programas que faz o CPU utilzar <br> todo seu desempeho em jogos
-          <span class="icone">＋</span>
-        </div>
-        <div class="conteudo">
-          <a id="linkcenter" href="https://coderbag.com/programming-c/disable-cpu-core-parking-utility" target="_blank"> PARKING-UTILITY</a>
-          <a id="linkcenter" href="https://coderbag.com/product/quickcpu" target="_blank"> QUICKCPU</a>
-        </div>
+      <div class="conteudo">
+        <p id="chrom">chrome://flags/#enable-parallel-downloading </p>
+        <h5 style="text-align: center;"> Habilite o comando >> Parallel downloading</h5>
+        <a id="linkdolado" href="https://www.freedownloadmanager.org/pt/" target="_blank"> FREE DOWNLOAD MANAGER</a>
+        <a id="linkdolado"
+          href="https://chrome.google.com/webstore/detail/free-download-manager/ahmpjcflkgiildlgicmcieglgoilbfdp"
+          target="_blank"> Extensao Free download manager </a>
       </div>
-
-      <div class="item">
-        <div class="titulo" onclick="toggleItem(this)">
-          <span class="icone">＋</span>
-          Site CIDR - CALCULATOR
-          <span class="icone">＋</span>
-        </div>
-        <div class="conteudo">
-          <p>SITE QUE CALCULA O CIDR DE UMA REDE </p>
-          <a id="linkcenter" href="https://ipcalc.co/" target="_blank"> Calculadora de IP </a>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="titulo" onclick="toggleItem(this)">
-          <span class="icone">＋</span>
-            O Que é CIDR?
-          <span class="icone">＋</span>
-        </div>
-        <div class="conteudo"  style="overflow: scroll;">
-          <pre><strong style="font-size: 140%;"><em style="color: brown;">CIDR:</em> significa Classless Inter-Domain Routing </strong></pre>
-          <pre><strong style="font-size: 110%;">(ou, em português, <em style="color: brown;">"Roteamento Interdomínios Sem Classe"</em>)</strong></pre>
-            <em style="color: rgb(43, 43, 43);">Foi introduzido para substituir o antigo sistema de classes de IP (A, B, C) e permitir uma divisão mais flexível de redes IP. Como /30, /29, /28, /24.....</em>
-        </div>
-      </div>
-
     </div>
-    <br>
-    <script>
-      function toggleItem(elemento) {
-        const item = elemento.parentElement;
-        const acordeao = item.parentElement;
-        const itens = acordeao.querySelectorAll('.item');
-  
-        itens.forEach(i => {
-          if (i !== item) {
-            i.classList.remove('ativo');
-            i.querySelector('.icone').textContent = '＋';
-          }
-        });
-  
-        if (item.classList.contains('ativo')) {
-          item.classList.remove('ativo');
-          elemento.querySelector('.icone').textContent = '＋';
-        } else {
-          item.classList.add('ativo');
-          elemento.querySelector('.icone').textContent = '×';
+
+    <div class="item">
+      <div class="titulo" onclick="toggleItem(this)">
+        <span class="icone">＋</span>
+        OS CLICK
+        <span class="icone">＋</span>
+      </div>
+      <div class="conteudo">
+        <p> SITE QUE DA PRA BAIXAR VERSOES DE SISTEMA OPERACIONAL <MARK>ISO</MARK></p>
+        <a id="linkcenter" href="https://os.click/en" target="_blank"> >> OS.CLICK << </a>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="titulo" onclick="toggleItem(this)">
+        <span class="icone">＋</span>
+        Pairdrop.Net
+        <span class="icone">＋</span>
+      </div>
+      <div class="conteudo">
+        <p>site que Transfere arquivos do <mark>celular</mark> pro <mark>Desktop</mark> e Vice-Versa</p>
+        <h5 style="text-align: center;">ABRA O SITE NO PC & NO CELULAR</h5>
+        <a id="linkcenter" href="https://pairdrop.net/" target="_blank"> Pairdrop.Net</a>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <div class="titulo" onclick="toggleItem(this)">
+        <span class="icone">＋</span>
+        Baixar Versão Manualmente do W.Update
+        <span class="icone">＋</span>
+      </div>
+      <div class="conteudo">
+        <a id="linkcenter" href="https://catalog.update.microsoft.com/Home.aspx" target="_blank"> WINDOWS_UPDATE</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="titulo" onclick="toggleItem(this)">
+        <span class="icone">＋</span>
+        Programa otimiza memoria RAM do PC
+        <span class="icone">＋</span>
+      </div>
+      <div class="conteudo">
+        <a id="linkcenter" href="https://www.wisecleaner.com/wise-memory-optimizer.html" target="_blank">
+          WISE-MEMORY</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="titulo" onclick="toggleItem(this)">
+        <span class="icone">＋</span>
+        Programa otimiza o Navegador pra nao<br> consumir muita memoria RAM do PC
+        <span class="icone">＋</span>
+      </div>
+      <div class="conteudo">
+        <a id="linkcenter" href="https://www.rizonesoft.com/downloads/firemin/" target="_blank"> FIREMIN</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="titulo" onclick="toggleItem(this)">
+        <span class="icone">＋</span>
+        Programa Otimiza o PC e <br>Desfragmenta o SSD & HD
+        <span class="icone">＋</span>
+      </div>
+      <div class="conteudo">
+        <a id="linkcenter" href="https://www.ccleaner.com/defraggler?cc-noredirect=" target="_blank"> DEFRAGGLER</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="titulo" onclick="toggleItem(this)">
+        <span class="icone">＋</span>
+        Programas que faz o CPU utilzar <br> todo seu desempeho em jogos
+        <span class="icone">＋</span>
+      </div>
+      <div class="conteudo">
+        <a id="linkcenter" href="https://coderbag.com/programming-c/disable-cpu-core-parking-utility" target="_blank">
+          PARKING-UTILITY</a>
+        <a id="linkcenter" href="https://coderbag.com/product/quickcpu" target="_blank"> QUICKCPU</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="titulo" onclick="toggleItem(this)">
+        <span class="icone">＋</span>
+        Site CIDR - CALCULATOR
+        <span class="icone">＋</span>
+      </div>
+      <div class="conteudo">
+        <p>SITE QUE CALCULA O CIDR DE UMA REDE </p>
+        <a id="linkcenter" href="https://ipcalc.co/" target="_blank"> Calculadora de IP </a>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="titulo" onclick="toggleItem(this)">
+        <span class="icone">＋</span>
+        O Que é CIDR?
+        <span class="icone">＋</span>
+      </div>
+      <div class="conteudo" style="overflow: scroll;">
+        <pre><strong style="font-size: 140%;"><em style="color: brown;">CIDR:</em> significa Classless Inter-Domain Routing </strong></pre>
+        <pre><strong style="font-size: 110%;">(ou, em português, <em style="color: brown;">"Roteamento Interdomínios Sem Classe"</em>)</strong></pre>
+        <em style="color: rgb(43, 43, 43);">Foi introduzido para substituir o antigo sistema de classes de IP (A, B, C)
+          e permitir uma divisão mais flexível de redes IP. Como /30, /29, /28, /24.....</em>
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <script>
+    function toggleItem(elemento) {
+      const item = elemento.parentElement;
+      const acordeao = item.parentElement;
+      const itens = acordeao.querySelectorAll('.item');
+
+      itens.forEach(i => {
+        if (i !== item) {
+          i.classList.remove('ativo');
+          i.querySelector('.icone').textContent = '＋';
         }
+      });
+
+      if (item.classList.contains('ativo')) {
+        item.classList.remove('ativo');
+        elemento.querySelector('.icone').textContent = '＋';
+      } else {
+        item.classList.add('ativo');
+        elemento.querySelector('.icone').textContent = '×';
       }
-    </script>
-  
-  </body>
-  </html>
-  
+    }
+  </script>
+
+  <!---SCRIPTY DA Tela Login-->
+  <script>
+      // Verifica se o usuário está logado
+    if (sessionStorage.getItem("logado") !== "true") {
+      // Redireciona para o login se não estiver logado
+      window.location.href = "index.html";
+    }
+
+    function sair() {
+      sessionStorage.removeItem("logado");
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+
+</html>

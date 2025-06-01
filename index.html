@@ -134,21 +134,22 @@
         }
     }
     function logar() {
+      var login = document.getElementById('login').value;
+      var senha = document.getElementById('password').value;
 
-        var login = document.getElementById('login').value;
-        var senha = document.getElementById('password').value;
+      // Login autorizado apenas se login e senha forem iguais
+      if ((login === "joel" && senha === "joel") ||
+          (login === "sousa" && senha === "sousa")) {
 
-        if (
-            (login == "joel" && senha == "joel") ||
-            (login == "sousa" && senha == "sousa")
-        ) {
-            location.href = "indexx.html";
-        }
-        else {
-            alert('senha ou login esta incorreto');
-        }
+        // Salva o login apenas para esta aba
+        sessionStorage.setItem("logado", "true");
+
+        // Vai para a página protegida
+        window.location.href = "indexx.html";
+      } else {
+        alert("Login ou senha incorretos");
+      }
     }
-
 </script>
 
 </html>
