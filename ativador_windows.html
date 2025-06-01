@@ -35,5 +35,16 @@
           <h4 style="text-shadow: #ff0000; color: #4e4e4e;">2*..  E SO SEGUIR AS INFORMACOES DA JANELA </h4>
         </div>
       </div>
+
+
+      <!---SCRIPTY DA Tela Login-->
+  <script>
+      // Verifica se o usuário está logado
+    if (sessionStorage.getItem("logado") !== "true") {
+      // Redireciona para o login se não estiver logado
+      window.location.href = "index.html";
+    }
+
+  </script>
 </body>
 </html>
