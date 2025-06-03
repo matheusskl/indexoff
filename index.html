@@ -15,8 +15,8 @@
         }
 
         body {
-            background-image: url("./Tela-Login/hacker.gif");
-
+            background-image: url(./Tela-Login/index.gif);
+            background-repeat: round;
         }
 
         form {
@@ -91,7 +91,7 @@
 
         #icon {
             position: absolute;
-            top: 74%;
+            top: 60%;
             right: -25px;
             transform: translateY(-50%);
             background: url('./Tela-Login/show.png');
@@ -113,7 +113,7 @@
 
     <form>
         <h2>TELA LOGIN</h2>
-        <input type="text" maxlength="10" class="p" placeholder="login" id="login"><br>
+        <!--<input type="text" maxlength="10" class="p" placeholder="login" id="login"><br>-->
         <input type="password" maxlength="10" class="o" placeholder="senha" id="password"><br>
         <div id="icon" onclick="showHide()"></div>
         <input onclick="logar(); return false" class="f" type="submit" value="LOGAR">
