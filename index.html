@@ -9,7 +9,20 @@
     <link rel="shortcut icon" href="favicon.ico">
     
     <style>
-        * {
+        
+
+        
+        #imagem {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+     * {
             margin: 0;
             padding: 0;
         }
@@ -20,10 +33,10 @@
         }
 
         form {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            display: block;
+            align-items: center;
+            justify-items: center;
+            margin-top: 20%;
             text-shadow: 1px 1px 1px greenyellow;
             letter-spacing: 5px;
 
@@ -71,9 +84,9 @@
         }
 
         .f {
+            margin-top: -6%;
             border: none;
-            left: 35%;
-            position: absolute;
+            display: flex;
             border-radius: 10px;
             color: rgb(0, 0, 0);
             background-color: rgb(255, 255, 255);
@@ -90,11 +103,10 @@
         }
 
         #icon {
-            position: absolute;
-            top: 60%;
-            right: -25px;
-            transform: translateY(-50%);
-            background: url('./Tela-Login/show.png');
+            position: relative;
+            left: 6.9rem;
+            transform: translateY(-190%);
+            background-image: url(Tela-Login/show.png);
             background-size: cover;
             width: 30px;
             height: 30px;
@@ -102,22 +114,57 @@
         }
 
         #icon.hide {
-            background: url('./Tela-Login/hide.png');
+            background-image: url(Tela-Login/hide.png);
             background-size: cover;
+            position: relative;
+            left: 6.9rem;
+            transform: translateY(-190%);
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
         }
+
+        * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+.login-container{
+      
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      }
+
+
     </style>
 
 </head>
 
 <body>
 
-    <form>
+    <img  id="imagem" src="./Tela-Login/wallhaven-8xe1kk.png" alt="binario hacker">
+
+    <div class="login-container">
+     <form>
         <h2>TELA LOGIN</h2>
         <!--<input type="text" maxlength="10" class="p" placeholder="login" id="login"><br>-->
         <input type="password" maxlength="10" class="o" placeholder="senha" id="password"><br>
         <div id="icon" onclick="showHide()"></div>
         <input onclick="logar(); return false" class="f" type="submit" value="LOGAR">
     </form>
+    </div>
 </body>
 <script>
     const password = document.getElementById('password');
@@ -134,13 +181,17 @@
         }
     }
     function logar() {
-      var login = document.getElementById('login').value;
+      /*var login = document.getElementById('login').value;*/ /*variavel LOGIN DESATIVADO*/
       var senha = document.getElementById('password').value;
 
-      // Login autorizado apenas se login e senha forem iguais
+        /* Login autorizado apenas se login e senha forem iguais
       if ((login === "#" && senha === "#") ||
           (login === "@Stm#2025" && senha === "@Stm#2025")) {
+        */
 
+            // PASSWORD autorizado apenas se for igual
+      if (senha === "#")
+        {
         // Salva o login apenas para esta aba
         sessionStorage.setItem("logado", "true");
 
